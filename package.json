@@ -5,6 +5,6 @@
         "start": "node peer-server.js"
     },
     "dependencies": {
-        "peer": "^0.2.8"
+        "peer": "^0.2.10"
     }
 }
