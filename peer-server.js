@@ -5,5 +5,9 @@ var PORT = process.env.PORT || 9000;
 
 var server = PeerServer({
     port: PORT,
-    path: '/peerjs'
+    path: '/peerjs',
+    ssl: {
+        key: fs.readFileSync('./certificates/key.pem', 'utf8'),
+        cert: fs.readFileSync('./certificates/cert.pem', 'utf8')
+    }
 });
